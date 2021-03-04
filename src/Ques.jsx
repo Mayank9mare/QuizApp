@@ -67,6 +67,33 @@ const questions = [
     ],
   },
   {
+    questionText: 'Writers Building is the headquarters of',
+    answerOptions: [
+      { answerText: 'The times of India group', isCorrect: false },
+      { answerText: 'West Bengal Government', isCorrect: false },
+      { answerText: 'Press Trust of India', isCorrect: true },
+      { answerText: 'All India Writers Association', isCorrect: false },
+    ],
+  },
+  {
+    questionText: 'The dates of National Calendar Permanently correspond with the',
+    answerOptions: [
+      { answerText: 'Vikrami Calendar', isCorrect: false },
+      { answerText: 'Mohammadan Calendar', isCorrect: false },
+      { answerText: 'Georgian Calendar', isCorrect: true },
+      { answerText: 'None of these', isCorrect: false },
+    ],
+  },
+  {
+    questionText: 'The Komark Temple is dedicated to',
+    answerOptions: [
+      { answerText: 'Vishnu', isCorrect: false },
+      { answerText: 'Shiva', isCorrect: false },
+      { answerText: 'Krishna', isCorrect: false },
+      { answerText: 'Sun- God', isCorrect: true },
+    ],
+  },
+  {
     questionText: 'How much marks should I be given in this assignment',
     answerOptions: [
       { answerText: '9/10', isCorrect: true },
