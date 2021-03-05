@@ -1,7 +1,7 @@
 import "./styles.css";
 import React,{useState} from "react";
 import questions from "./Ques";
-
+import imga from "./a.jpeg";
 
 
 export default function App() {
@@ -41,7 +41,7 @@ export default function App() {
     
        <div className ="question-section">
        <div className="question-count">
-         <span> Question {currentQuestion+1}/{questions.length}</span>
+      <img src={imga}/><span> Question {currentQuestion+1}/{questions.length}</span>
          </div>
          
          <div className='question-text'>{questions[currentQuestion].questionText}</div>
