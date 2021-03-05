@@ -94,12 +94,12 @@ const questions = [
     ],
   },
   {
-    questionText: 'How much marks should I be given in this assignment',
+    questionText: 'Rate my App',
     answerOptions: [
-      { answerText: '9/10', isCorrect: true },
-      { answerText: '10/10', isCorrect: true },
-      { answerText: '9.5/10', isCorrect: true },
-      { answerText: '9.8/10', isCorrect: true },
+      { answerText: '😎', isCorrect: true },
+      { answerText: '😍', isCorrect: true },
+      { answerText: '🤐', isCorrect: true },
+      { answerText: '🤔', isCorrect: true },
     ],
   },
 ];
