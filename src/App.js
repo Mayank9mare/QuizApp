@@ -9,6 +9,11 @@ export default function App() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   
+  function replay(){
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowScore(false);
+  }
  
   function handleClick(isCorrect){
     if(isCorrect){
@@ -31,7 +36,12 @@ export default function App() {
     <div className="app">
     
       {showScore?(<div className="score-section">
-            You scored {score} out of {questions.length}  
+           
+            <p className="txt">You scored {score} out of {questions.length} </p>
+            
+            <button className="replay" onClick={replay}>RESTART</button> 
+  
+             
     </div>)
 :
 
