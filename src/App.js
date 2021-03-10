@@ -2,6 +2,7 @@ import "./styles.css";
 import React,{useState} from "react";
 import questions from "./Ques";
 import imga from "./a.jpeg";
+import answers from "./Correct";
 
 
 export default function App() {
@@ -37,7 +38,12 @@ export default function App() {
     
       {showScore?(<div className="score-card">
            
-            <p className="txt">You scored {score} out of {questions.length} </p>
+            <p className="txt">You scored {score-1} out of {questions.length-1} </p>
+            <p className="Hans">Answers</p>
+            {answers.map((answer,index)=>(
+              <p className="ans">{index+1}) {answer.answerText}</p>
+            ))}
+
             
             <button className="replay" onClick={replay}>RESTART</button> 
   
