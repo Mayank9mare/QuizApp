@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div className="app">
     
-      {showScore?(<div className="score-section">
+      {showScore?(<div className="score-card">
            
             <p className="txt">You scored {score} out of {questions.length} </p>
             
@@ -54,7 +54,7 @@ export default function App() {
       <img src={imga}/><span> Question {currentQuestion+1}/{questions.length}</span>
          </div>
          
-         <div className='question-text'>{questions[currentQuestion].questionText}</div>
+         <div className='questions'>{questions[currentQuestion].questionText}</div>
          <div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((option)=>(
               <button onClick={()=>(handleClick(option.isCorrect))}>{option.answerText} </button>
